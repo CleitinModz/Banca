@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banca Pró Néa 💡✨</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo h1 {
+      background-color: black;
+      color: #f9a825;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #f9a825;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background-color: #f9a825;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background-color: #000;
+      color: #f9a825;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #000;
+      color: #f9a825;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .footer .social-icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .footer .social-icons li {
+      margin: 0 10px;
+    }
+
+    .footer .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* AOS Animations */
+    .home-section, .courses-section, .teachers-section, .contact-section {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+
+    .home-section[data-aos="fade-up"],
+    .courses-section[data-aos="fade-up"],
+    .teachers-section[data-aos="fade-up"],
+    .contact-section[data-aos="fade-up"] {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="home" class="section home-section" data-aos="fade-up">
+      <div class="container">
+        <h1>✨ Seja bem-vindo à Pró Néa! ✨</h1>
+        <p>Na nossa escola de reforço, o aprendizado é uma jornada encantadora. 🌟 Oferecemos atenção especial e métodos eficazes para ajudar crianças até o 3º ano do ensino fundamental a alcançarem todo o seu potencial! 💡</p>
+      </div>
+    </section>
+    <section id="courses" class="section courses-section" data-aos="fade-up">
+      <div class="container">
+        <h2>💼 Nossos Valores</h2>
+        <p>Investir na educação de seu filho é a melhor decisão! 🎓 Confira nossos valores acessíveis:</p>
+        <ul class="values-list">
+          <li><strong>Matrícula:</strong> R$ 130,00</li>
+          <li><strong>Mensalidade:</strong> R$ 130,00</li>
+        </ul>
+        <p><strong>Aceitamos pagamentos via PIX. 💳</strong></p>
+      </div>
+    </section>
+    <section id="teachers" class="section teachers-section" data-aos="fade-up">
+      <div class="container">
+        <h2>🌟 Conheça Nossa Equipe</h2>
+        <ul class="team-list">
+          <li><strong>Profª Valdinéa:</strong> Uma educadora experiente, dedicada e apaixonada por transformar o aprendizado em algo leve e divertido para os pequenos. 🧡</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="section contact-section" data-aos="fade-up">
+      <div class="container">
+        <h2>📞 Fale Conosco</h2>
+        <p>Estamos prontos para atender você! 🤗 Entre em contato e saiba mais:</p>
+        <p><strong>Telefone:</strong> <a href="https://wa.me/5575999379011?text=Eu%20gostaria%20de%20conhecer%20o%20reforço" target="_blank">+55 75 9.9937-9011</a> 📱</p>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Pró Néa - Desenvolvido por Cleitin Modz. Todos os direitos reservados.</p>
+      <ul class="social-icons">
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
